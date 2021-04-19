@@ -6,7 +6,7 @@ lazy val V = new {
   val logEffect    = "0.13.2"
 
   val avro4s    = "4.0.0"
-  val kafka     = "2.5.1"
+  val kafka     = "2.8.0"
   val confluent = "5.5.1"
 
   val circe      = "0.13.0"
