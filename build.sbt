@@ -28,7 +28,7 @@ lazy val V = new {
   }
 
   val scalaTest     = "3.1.0"
-  val embeddedKafka = "5.5.1"
+  val embeddedKafka = "5.5.5"
 }
 
 lazy val common = project
