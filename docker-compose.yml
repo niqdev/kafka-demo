@@ -18,7 +18,7 @@ services:
 
   kafka:
     container_name: local-kafka
-    image: confluentinc/cp-kafka:5.5.1
+    image: confluentinc/cp-kafka:6.2.0
     depends_on:
       - zookeeper
     ports:
@@ -35,7 +35,7 @@ services:
 
   schema-registry:
     container_name: local-schema-registry
-    image: confluentinc/cp-schema-registry:5.5.1
+    image: confluentinc/cp-schema-registry:6.2.0
     depends_on:
       - kafka
     ports:
@@ -73,7 +73,7 @@ services:
 
   kafka-rest:
     container_name: local-kafka-rest
-    image: confluentinc/cp-kafka-rest:5.5.1
+    image: confluentinc/cp-kafka-rest:6.2.0
     depends_on:
       - kafka
       - schema-registry
@@ -136,7 +136,7 @@ services:
   # distributed mode
   kafka-connect:
     container_name: local-kafka-connect
-    image: confluentinc/cp-kafka-connect:5.5.1
+    image: confluentinc/cp-kafka-connect:6.2.0
     depends_on:
       - kafka
       - schema-registry
