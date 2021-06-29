@@ -5,7 +5,7 @@ lazy val V = new {
   val scalaLogging = "3.9.2"
   val logEffect    = "0.13.2"
 
-  val avro4s    = "4.0.0"
+  val avro4s    = "4.0.10"
   val kafka     = "2.5.1"
   val confluent = "5.5.1"
 
